@@ -26,7 +26,7 @@ To simply use sqlite3 on python.
 Features
 --------
 
-* TODO
+This package provides Python methods instead of SQLite3 statements.
 
 Credits
 -------
