@@ -4,6 +4,8 @@ import sqlite3
 
 
 class DatabaseManager:
+    """Database Manager Class
+    """
     def __init__(self, database_filename):
         self.connection = sqlite3.connect(database_filename)
 

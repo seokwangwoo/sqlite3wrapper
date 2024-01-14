@@ -23,6 +23,24 @@ you through the process.
 .. _Python installation guide: http://docs.python-guide.org/en/latest/starting/installation/
 
 
+From poetry
+--------------
+
+To install Sqlite3Wrapper via poetry, add the following line in pyproject.toml:
+
+.. code-block:: console
+
+    [tool.poetry.dependencies]
+    ...
+    sqlite3wrapper = {git = "https://github.com/seokwangwoo/sqlite3wrapper"}
+
+Then, you can install it with:
+
+.. code-block:: console
+
+    $ poetry install
+
+
 From source
 -----------
 

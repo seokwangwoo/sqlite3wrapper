@@ -21,6 +21,7 @@ COVERAGE_DIR = ROOT_DIR.joinpath("htmlcov")
 COVERAGE_REPORT = COVERAGE_DIR.joinpath("index.html")
 DOCS_DIR = ROOT_DIR.joinpath("docs")
 DOCS_BUILD_DIR = DOCS_DIR.joinpath("_build")
+DOCS_SRC_DIR = DOCS_DIR.joinpath("src")
 DOCS_INDEX = DOCS_BUILD_DIR.joinpath("index.html")
 PYTHON_DIRS = [str(d) for d in [SOURCE_DIR, TEST_DIR]]
 
@@ -110,6 +111,13 @@ def docs(c, launch=True):
     _run(c, "sphinx-build -b html {} {}".format(DOCS_DIR, DOCS_BUILD_DIR))
     if launch:
         webbrowser.open(DOCS_INDEX.as_uri())
+
+@task
+def docs_api(c):
+    """
+    Generate sphinx sources of API from docstrings
+    """
+    _run(c, "sphinx-apidoc -fME -o {} {} -H 'Python Packages'".format(DOCS_SRC_DIR, SOURCE_DIR))
 
 
 @task

@@ -8,7 +8,7 @@ Welcome to Sqlite3Wrapper's documentation!
    readme
    installation
    usage
-   modules
+   src/modules
    contributing
    history
 
