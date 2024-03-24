@@ -35,3 +35,4 @@ This package was created with Cookiecutter_ and the `briggySmalls/cookiecutter-p
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`briggySmalls/cookiecutter-pypackage`: https://github.com/briggySmalls/cookiecutter-pypackage
+.. _`seokwangwoo/cookiecutter-pypackage`: https://github.com/seokwangwoo/cookiecutter-pypackage
